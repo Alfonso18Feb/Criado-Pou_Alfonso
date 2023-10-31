@@ -21,13 +21,15 @@ b)       Si te encuentras actualmente dentro del directorio "Universidad", ¿có
 
 7º Te han asignado la tarea de trabajar en un proyecto de código abierto alojado en GitHub. Como nuevo colaborador, se espera que sigas las mejores prácticas para el manejo del código fuente utilizando Git. Que comandos de Git utilizaría para las siguientes tareas: (2 pts) (0.2 cada pregunta):
 
+***Las respestas correctas estan en negrita como este texto***
+
 
 
 1) Clonar el Repositorio:
 
 a) git pull
 
-b) git clone
+***b) git clone***
 
 c) git fetch
 
@@ -35,7 +37,7 @@ d) git branch
 
 2) Crear una Nueva Rama:
 
-a) git branch
+***a) git branch***
 
 b) git checkout
 
@@ -49,7 +51,7 @@ a) git merge
 
 b) git branch
 
-c) git checkout
+***c) git checkout***
 
 d) git pull
 
@@ -57,7 +59,7 @@ d) git pull
 
 a) git commit
 
-b) git add
+***b) git add***
 
 c) git push
 
@@ -67,7 +69,7 @@ d) git checkout
 
 a) git add
 
-b) git commit
+***b) git commit***
 
 c) git push
 
@@ -77,7 +79,7 @@ d) git merge
 
 a) git pull
 
-b) git push
+***b) git push***
 
 c) git merge
 
@@ -89,7 +91,7 @@ a) git push
 
 b) git branch
 
-c) git pull
+***c) git pull***
 
 d) git checkout
 
@@ -101,11 +103,11 @@ b) git branch
 
 c) git pull
 
-d) git merge
+***d) git merge***
 
 9) Revertir Cambios Locales:
 
-a) git reset --hard
+***a) git reset --hard***
 
 b) git pull
 
@@ -119,7 +121,7 @@ a) git commit
 
 b) git push
 
-c) git log
+***c) git log***
 
 d) git add
 
