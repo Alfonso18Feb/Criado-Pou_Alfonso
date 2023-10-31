@@ -1,22 +1,29 @@
 #AlfonsoCriado-Pou Castellanos 
+
+
 ##https://github.com/Alfonso18Feb/Criado-Pou_Alfonso
 
 1º Explica que es un “Pull Request” en Github. (1 pts)
+
 **Un Pull request es cuando una persona quiere subir los cambios echos en su repositorio remoto a otro repositorio local o de otra persona trabajando en GitHub**
 
 2º ¿Qué es un conflicto de fusión (merge conflict) en Git? Explica como resolverías este conflicto. (1 pts)
+
 **El conflicto de fusion en Git es cuando dos ramas differentes se integran y porque tienen differente codigo entran en conflicto**.***Esto se puede resolver editando la rama mergeada para cabiar los errores al integrarlas.***
 
 3º Imaginemos que tenemos dos ramas, la principal llamada “main” y la rama “examen_parcial”. ¿Qué procedimiento se debería seguir para fusionar (merge) ambas ramas? (0.5 pts)
+
 **Primero se tien que utilizar el comando ***git branch*** para ver en que rama estamos**
 **Si estamos en la rama examen_parcial se utiliza el comando ***git checkout main*** para cambiar a la rama main**
 **Por ultimo en la rama main escribimos en git bash el comando ***git merge examen_parcial*** para hacer merge a las dos ramas**
 
 4º Has realizado un commit, pero luego descubres un error importante en los cambios que has incluido. Necesitas revertir este último commit para regresar tu proyecto al estado anterior, pero deseas mantener los cambios realizados en tu área de trabajo. Explica el comando de Git que utilizarías para llevar a cabo esta acción. (0.5 pts)
+
 **El comando utilizado para revertir los cambios de este commit seria el comando ***git reverse <la id del commit que quieres ir>*** despues de escribir este comando puedes hacer estos cambios manteniendo los cambios que deseas en tu area de trabajo**  
 
 
 5º ¿Cómo se realiza un fork de un repositorio en GitHub y para qué se utiliza comúnmente esta acción? (1 pts).
+
 **Para realizar un fork es simple tienes que clicar el boton Fork en el repositorio que quieres copiar. Luego este repositorio se clonaria en la cuenta tuya de GitHub y guardas cambios**.***El fork se utiliza muchas veces cuando quieres añadir algo a un repositorio de otra persona (ej: el profesor). Esto te permite clonar su repositorio en tu cuenta en github y desde hay puedes hacer todos los cambios que quieras hasta que quierass volver a poner lo editado a el github del repositorio de el individuo (profesor). Esto se hace haciendo un Pull Request.*** 
 
 6º Te encuentras trabajando en un proyecto y necesitas llegar a un archivo específico llamado "archivo.txt". Este archivo está ubicado dentro de una estructura de directorios en tu sistema.
@@ -155,15 +162,20 @@ Tu tarea es coordinar la integración de estas dos ramas en develop asegurándot
 
 Describe detalladamente los pasos y consideraciones que tomarías para lograr esta tarea, incluyendo cómo manejarías los posibles conflictos de fusión y cómo asegurarías que la integración final en develop sea estable y funcional. (2 pts)
 
-GIT DIFF MIRAR DIFFERENCIAS
 
-REBASE EDITAMOS LOS ERRORES
+*Lo primero que miro es la differencia entre las dos ramas utilizando el comando git diff. Ya hayadas las diferencias entre las dos ramas podemos editar las ramas para cuando se mergen no esten el conflicto*
 
-GIT MERGE
+**Se puede editar los errores del merge utilizando el comando git rebase. Esto nos indica los errores que tenemos que editar y nos los de ja editar paso a paso**
 
-ESTA LISTO PARA MERGEAR
+***Cada vez que se editen los cambios se tiene que salvar los cambios y salir con esc :aq.***
+***Luego tenemos que hacer un commit para ir al siguiente error escribiendo git rebase --continue.***
+***Despues de haber corregido todos los errores del merge salimos del rebase y ya podemos integrar las ramas matematiscas y Diseño UX a develop*** 
+*Utilizamos el comando git merge matematicas Diseño UX en develop.**Despues hacemos git add . y git commit "integrando matematicas y diseño en la rama develop" y por ultimo hacemos un git push -all***
 
+**Para asegurar la integracion final en develop sea estable lo que haria seria comprobar con las ramas anteriores que todo se haya añadido bien. ***Esto se podria ver abriendo el proyecto del software matematico antes de hacer el git push**
+***Si abriendo el software vemos que todo se haya integrado como deberia verse entonces ya podemos hacer el push para que los cambios se guerden en la rama remota en github**
 
+**Las ramas ya no deberian estar en conflicto ya que las hemos editado utilizando git rebase**
 
 
 
